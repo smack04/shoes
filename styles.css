@@ -1,34 +1,23 @@
-/* Ensures all text uses the same font and size */
 body {
-    font-family: 'Arial', sans-serif; 
-    font-size: 1.1rem; 
+    font-family: 'Arial', sans-serif; /* Change this to match the exact font */
     margin: 0;
     padding: 0;
     color: black;
     text-align: center;
-    line-height: 1.5;
 }
 
-/* Override other text elements to ensure consistency */
-h1, h2, h3, p, nav, footer {
-    font-size: 1.1rem; 
-    font-weight: normal;
-}
-
-/* Center headings with proper spacing */
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-top: 20px;
 }
 
-/* Style paragraphs */
 p {
+    font-size: 1.1rem;
+    line-height: 1.5;
     width: 60%;
     margin: 0 auto;
 }
-
-/* Navigation bar styling */
 nav {
     display: flex;
     justify-content: center;
@@ -46,3 +35,39 @@ nav ul {
 }
 
 nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav ul li button:hover {
+    color: grey;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
