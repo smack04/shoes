@@ -60,7 +60,9 @@ p {
     font-size: 1.1rem;
     line-height: 1.5;
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto; /* add spacing below the paragraph */
+}
+
 
 footer {
     text-align: center;
@@ -77,3 +79,23 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* Add spacing under the navbar */
+.navbar {
+    margin-bottom: 40px;
+}
+
+/* Add spacing above and below the main image */
+img {
+    margin: 30px 0;
+    max-width: 80%;
+    height: auto;
+}
+
+/* Add spacing above the footer */
+footer {
+    margin-top: 60px;
+}
+main {
+    padding: 0 20px;
+}
+
