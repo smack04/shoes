@@ -9,7 +9,7 @@
 
 /* Logo on the left */
 .nav-left .logo {
-    height: 40px;
+    height: 80px;
     width: auto;
 }
 
@@ -40,20 +40,6 @@
 
 .nav-bar a:hover {
     color: #555;
-}
-
-
-.logo {
-    height: 40px; /* Adjust size as needed */
-    width: auto;
-}
-
-button {
-   
-}
-
-button:hover {
-  
 }
 
 body {
