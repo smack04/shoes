@@ -1,16 +1,47 @@
-.nav-bar {
-    display: flex;
-    align-items: center; /* Vertically align logo and nav items */
-    gap: 20px; /* Optional spacing between items */
-    list-style: none;
-    padding: 10px 20px;
-    background-color: #fff; /* Adjust as needed */
-}
-
-.nav-bar li {
+/* Outer container */
+.navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #fff;
 }
+
+/* Logo on the left */
+.nav-left .logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Right-aligned nav bar */
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/* Navigation list */
+.nav-bar {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav link styles */
+.nav-bar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #555;
+}
+
 
 .logo {
     height: 40px; /* Adjust size as needed */
