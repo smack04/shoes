@@ -98,4 +98,7 @@ footer {
 main {
     padding: 0 20px;
 }
+footer {
+    color: #333; /* Dark grey text for readability */
+}
 
