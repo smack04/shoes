@@ -16,50 +16,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-   
-    <title>Sign Up</title>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Evolution of Shoes</title>
+    <link rel="stylesheet" href="style2.css"> <!-- Assuming you have a CSS file -->
+    <style>
+        /* You can also put this into style2.css */
+        .form-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+
+        .form-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .form-image img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .signup-form {
+            flex: 1;
+            padding: 40px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .signup-form input, .signup-form textarea, .signup-form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .signup-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .signup-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="nav-left">
-        <a href="index.html"><img src="sneaker_logo.png" alt="Home" class="logo"></a>
-    </div>
-    <div class="nav-right">
-        <ul class="nav-bar">
-            <li><a href="start_of_shoes.html">The Start of Shoes</a></li>
-            <li><a href="evolution_fashion.html">Evolution of Shoes in Fashion</a></li>
-            <li><a href="evolution_sneaker_culture.html">Evolution of Sneaker Culture</a></li>
-            <li><a href="form.html">Sign Up</a></li>
-        </ul>
-    </div>
+
+<nav class="navbar">
+    <!-- Your navigation bar here if you want -->
 </nav>
-        </ul>
-    </nav>
-    <title>Sign Up / Subscribe</title>
-</head>
-<body>
 
-    <h1>Subscribe to Our Newsletter</h1>
-    <p>Stay updated with the latest news on shoes and sneaker culture!</p>
+<div class="form-container">
+    <div class="form-image">
+        <img src="signup_shoes.jpg" alt="Cool Sneakers"> <!-- Replace with your image -->
+    </div>
 
-    <!-- Sign-Up Form -->
-    <form action="submit_form.php" method="post">
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="password">Create a Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <label for="subscribe">
-            <input type="checkbox" id="subscribe" name="subscribe" checked>
-            I agree to receive updates and newsletters.
-        </label><br><br>
-
-        <input type="submit" value="Sign Up">
-    </form>
+    <div class="signup-form">
+        <h2>Sign Up for Updates</h2>
+        <form action="submit_form.php" method="POST"> <!-- You can change action later -->
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <textarea name="message" rows="4" placeholder="Tell us why you love sneakers!"></textarea>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
