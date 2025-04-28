@@ -102,15 +102,30 @@ footer {
     color: #333; /* Dark grey text for readability */
 }
 
-.image-row {
+.image-text-section {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px; /* spacing between images */
-    margin: 20px 0;
+    gap: 30px; /* space between images and text */
+    padding: 40px;
 }
 
-.image-row img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px; /* optional: gives a soft corner */
+.images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 15px;
 }
+
+.images img {
+    width: 250px; /* or whatever size fits your layout */
+    height: auto;
+    border-radius: 8px;
+}
+
+.text {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
