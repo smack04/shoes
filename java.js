@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Picture9.jpg": "Nail Soled Shoes",
         "Picture10.jpg": "Wooden Lotus Shoes",
         "Picture11.jpg": "Paduka",
+        "j.jpg": "Air Jordan 1",
         "sneaker_logo.png": "Home - Sneaker Logo"
         // Add more like: "filename.jpg": "Tooltip you want"
     };
